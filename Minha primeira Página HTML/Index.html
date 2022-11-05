@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Principal</title>
+</head>
+<style type="text/css">
+    a:link {
+    text-decoration:none;
+    }
+    a:visited {
+    text-decoration:none;
+    }
+    a:hover {
+    text-decoration:underline;
+    }
+    </style>
+<body>
+    <h1 id="inicio">Módulo 1 - Entendo o HTML</h1>
+    <hr />
+    <h2>Índice</h2>
+    <ol>
+        <li><a href="#html">O que são HTML?</a></li>
+        <li><a href="#tags">O que são TAGS?</a></li>
+        <li><a href="#atributos">O que são Atributos?</a></li>
+        <li><a href="#listas">Diferença entre Listas Ordenadas e Listas Não Ordenadas</a></li>
+        <li><a href="#inspetor">Utilizando o Inspetor de Elementos no Site</a></li>
+        <li><a href="#texto">Texto e Formatações no HTML</a></li>
+        <li><a href="#referencias">Links de referências</a></li>
+    </ol>
+
+    <h3 id="html">1. O que são <abbr title="HyperText Markup Language">HTML?</abbr></h3>
+    <small><a href="#inicio">[Voltar]</a></small>
+    <p><strong>HTML</strong> é o que permite criar uma estrutura básica de um <i>site</i>, ele serve para dar significado
+    e organizar as informações de uma página na <i>web</i>. É na estrutura do <strong>HTML</strong> que se estabelecem as
+    diferentes distribuições e tamanhos para titulos, sub-títulos, parágrafos, imagens ou outro elemento.</p>
+
+    <p>E como é feito então, essa estrutura em <strong>HTML</strong> até a visualização final para o usuário? Através de 
+    um documetno <strong>HTML</strong>, o navegador web faz a leitura do arquivo e 
+    <a href="https://pt.wikipedia.org/wiki/Renderiza%C3%A7%C3%A3o" title="Clique Aqui" style="color: red;" target="_blank"><u> renderiza</u></a> o seu conteúdo para o 
+    usuário final possa ver, ou seja, o navegador junta todos os dados, processa e transforma no visual que vemos no site.</p>
+
+    <p><blockquote>Você pode ver um pouco mais sobre HTML <a href="https://pt.wikipedia.org/wiki/HTML" target="_blank"><u>
+    aqui</u></a>.</blockquote></p>
+
+    <h3 id="tags">2. O que são TAGS?</h3>
+    <small><a href="#inicio">[Voltar]</a></small>
+    <p><strong>TAGS</strong> são símbolos que separam um conteúdo do outro. Ela serve como uma informação para o navegador
+    saber com qual tipo de conteúdo está lidando, como parágrafos, títulos, tabelas e etc. Os navegadores são capazes de
+    intepretarem quais <strong>TAGS</strong> existem dentro do documento HTML e exibir uma página de acordo com os tipos 
+    utilizados nessa estrutura.</p>
+
+    A maioria das <strong>TAGS</strong> precisam de abertura e fechamento e isso acontece da seguinte forma: para se iniciar
+    é com o sinal de < e para finalizar, utiliza-se os sinais />. Uma curiosidade é que as <strong>TAGS</strong> não diferenciam
+    letras maiscúlas ou minúsculas, mas, é sempre recomendável que se tenha um estilo comum ao escreve-las em um documento,
+    para que se siga um padrão e tenha clareza de código.
+
+    <p><blockquote>Se você quer saber um pouco mais sobre as <strong>TAGS</strong> <a href="https://pt.wikipedia.org/wiki/Tag_(linguagens_de_marca%C3%A7%C3%A3o)" 
+    target="_blank"><u>clique aqui</u></a>.</blockquote></p>
+
+    <h3 id="atributos">3. O que são Atributos?</h3>
+    <small><a href="#inicio">[Voltar]</a></small>
+    <p>Os <strong>Atributos</strong> são comandos ou informações que passamos para as Tags para que elas se comportem 
+    da maneira esperada, é como uma informação adicional que incluimos na nossa Tag, para que ela possa cumprir melhor 
+    a sua função, atribuindo á ela algum detalhe ou variação.</p>
+
+    <p>Como exemplo, podemos usar a Tag de imagem. A função dela é exibir uma imagem no navegador. O que essa Tag
+    precisa saber é o caminho dessa imagem, e para isso usamos algum <strong>atributo</strong>.</p>
+
+    <p>São vários <strong>Atributos</strong> que podem ser usados na sua Tag, como exemplos temos <i>class, id, 
+    style, title</i> e etc.<p>
+    
+    <p><blockquote>Se quiser aprender um pouco mais sobre os <strong>Atributos</strong>, você pode
+    <a href="https://tableless.github.io/iniciantes/manual/html/oquetags.html" target="_blank"> <u>clicar aqui</u>.</a></blockquote></p>
+
+    <h3 id="listas">4. Diferença entre Listas Ordenadas OL e Listas Não Ordenadas UL</h3>
+    <small><a href="#inicio">[Voltar]</a></small>
+
+    <p>A Lista Ordenada é utlizada com a Tag <strong>ol</strong> <i>(Ordered List)</i>. Com essa Tag, não é necessário
+    colocar números antes da escrita, apenas os itens que deseja que apareça. O próprio navegador fará a contagem
+    automaticamente ao interpretar o código HTML que foi criado, ou seja, é inserido ao lado esquerdo de cada nova 
+    informação, classificando esses itens numa lista ordenada numericamente, por exemplo.</p>
+    
+    <p>Ela é usada assim: "< ol > e < /ol >" de dentro dela, é preciso inserir a Tag "< li> e < /li >" antes de colocar um
+    novo item da lista <i>(veja <a href="http://www.fundacaobradesco.org.br/vv-apostilas/cursoHTML/Lista_ordenada_ou_numerada.html">
+    <u>aqui</u></a> mais informações)</i>, e como exemplo, no navegador ficaria dessa forma:
+    <ol>
+        <li><mark>Item a</mark>
+        <li><mark>Item b</mark></li>
+    </ol>
+    </p>
+
+    <p>Já Tag <strong>ul</strong> é a lista sem uma ordem lógica <i>(Unordered List)</i>. Nela, os itens da lista aparecem 
+    na ordem que for colocada no código HTML, não tendo nenhuma numeração ou lógica de ordem, apenas seguem a ordem descrita
+    no código.</p>
+
+    <p>Ela é usada assim: "< ul > e < /ul >" e ficaria dessa forma, no navegador:</p>
+    <ul>
+        <li><mark>Item a</mark> 
+        <li><mark>Item b</mark></li>
+    </ul>
+
+    <p>Basicamente, a diferença entre a Lista Ordenada e a Lista Não Ordenada, é que a primeira lista seus itens com uma ordem
+    númerica automática, e a segunda lista seus itens com uma marcação.</p>
+
+    <p><blockquote>Quer aprender um pouco mais sobre essas essas Tags? <a href="https://www.htmlprogressivo.net/2013/08/Como-criar-listas-simples-e-listas-ordenadas-com-numeros.html" 
+    target="_blank"><u>Clique aqui</u></a> então.</blockquote></p>
+
+    <h3 id="inspetor">5. Utilizando o Inspetor de Elementos no Site</h3>
+    <small><a href="#inicio">[Voltar]</a></small>
+    <p>Essa é uma ferramenta onde é permitido visualizar o código-fonte de qualquer website. Além de dar a oportunidade de 
+    fazer qualquer alterações temporárias e analisar o resultado em tempo real, sem modificar o código-fonte original.
+    É bem simples, com o botão direito do mouse em qualquer website, clique em <strong>Inspecionar</strong> e 
+    conseguirá ver o código-fonte, imagens, o CSS forma o design, assim com fontes e muito mais.</p>
+
+    <p>É uma boa oportunidade para quem quer entender como a página funciona, alterando seus código e sabendo o que significa, 
+    por exemplo, cada Tag ou Atributo estruturado naquela <i>page</i>. Ao clicar em Inspecionar, sua tela ficaria dessa forma:</p>
+    <img width="700" src="./src/Imagens/Inspecionar.jpg" alt="ícone inspecionar">
+
+    <p><blockquote>Se quer aprender um pouco mais sobre inspecionar elementos num <i>site</i>, <a href="https://reulison.com.br/inspecionar-elemento/" target="_blank">
+    <u>clique aqui</u></a></blockquote></p>
+
+    <h3 id="texto">6. Texto e Formatações no HTML</h3>
+    <small><a href="#inicio">[Voltar]</a></small>
+    <p>No HTML, há seis níveis de cabeçalhos/títulos que podem ser utilizados por meio das Tags "h1, h2, h3, h4, h5 e h6", 
+    sendo o "h1" tendo a escrita maior e mais relevante e o "h6" tendo a menor escrita de todos. Esse é um dos principais
+    objetivos do HTML, dar estrutura de texto e significado para que um navegador o exiba corretamente, também conhecido como
+    <a href="https://developer.mozilla.org/pt-BR/docs/Glossary/Semantics" title="Clique Aqui" style="color: red; target="_blank"><u>semântica</u></a>.</p>
+
+    <p>O texto mais estruturado é composto por títulos e parágrafos, é isso que faz a experiência de leitura ser mais fácial.
+    Em HTML, cada parágrafo é separado pela Tag < p > e < /p >, sendo abertura e fechamento. E cada título é utilizado as Tags
+    h1 a h6.</p>
+
+    <p>Como exemplo, usando as Tags h1 a h6, ficaria da seguinte forma:</p>
+    <img width="400" src="./src/Imagens/Texto.jpg" alt="icone de imagem exemplo"></p>
+
+    <p>Além dessa Tag "h", que podemos utilizar para escrever, existem também outras formas de formatação utilizadas no HTML.</p>
+    <ul>
+        <li><strong>Negrito</strong>, usando a Tag "strong";
+        <li><i>Itálico</i>, usando a Tag "i";
+        <li><u>Sublinhado</u>, usando a Tag "u"; 
+        <li><small>Pequeno</small>, usando a Tag "small";
+        <li><mark>Destacado</mark>, usando a Tag "mark";
+        <li><del>Excluído</del>, serve para identifcar um texto que foi excluído, mas, permanece para mostrar o histórico de
+        modificações feitas, usando a Tag "del";</li>
+        <li><sub>Textos Subscritos</sub>, é usado para escrever um texto menor e com alinhamento abaixo do resto do conteúdo, 
+        usando a Tag "sub";
+        <li><sup>Sobrescrito</sup>, é ao contrário do Tag citada acima, o texto é menor mas, com alinhamento acima do resto do 
+        contéudo, usando a Tag "sup".
+        
+    </ul>
+
+    <P>Esses são apenas alguns exemplos de Tags que podem ser utilizadas em textos excritos no HTML.</P>
+
+    <p><blockquote>Se tem interesse em ver mais sobre as formatações de texto no HTML, <a href="https://www.devmedia.com.br/html-basico-codigos-html/16596" 
+    target="_blank"><u>clique aqui</u>.</a></blockquote></p>
+
+
+
+    <h3 id="referencias">7. Links de Referências</h3>
+    <small><a href="#inicio">[Voltar]</a></small>
+    <ul>
+        <li><a href="https://www.homehost.com.br/blog/tutoriais/o-que-e-html/" target="_blank">O que é HTML?</a></li>
+        <li><a href="https://pt.wikipedia.org/wiki/HTML" target="_blank">Origem do HTML</a></li>
+        <li><a href="https://pt.wikipedia.org/wiki/Renderiza%C3%A7%C3%A3o" target="_blank">O que é Renderização?</a></li>
+        <li><a href="https://pt.wikipedia.org/wiki/Tag_(linguagens_de_marca%C3%A7%C3%A3o)" target="_blank">O que são TAGS?</a></li>
+        <li><a href="https://tableless.github.io/iniciantes/manual/html/oquetags.html" target="_blank">O que são Atributos?</a></li>
+        <li><a href="https://www.htmlprogressivo.net/2013/08/Como-criar-listas-simples-e-listas-ordenadas-com-numeros.html" target="_blank">Listas OL e UL</a></li>
+        <li><a href="http://www.fundacaobradesco.org.br/vv-apostilas/cursoHTML/Lista_ordenada_ou_numerada.html" target="_blank">Mais sobre Listas</a></li>
+        <li><a href="https://reulison.com.br/inspecionar-elemento/" target="_blank">Inspecionar Elementos</a></li>
+        <li><a href="https://www.devmedia.com.br/html-basico-codigos-html/16596">Textos</a></li>
+    </ul>
+
+    <img width="600" src="./src/Imagens/frase-rodape.jpg" alt="icone de frase">
+
+</body>
+</html>
