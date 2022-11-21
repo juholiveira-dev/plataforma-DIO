@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horário de Atendimento</title>
+    <link rel="stylesheet" href="base.css">
+</head>
+<style type="text/css">
+    a:link {
+    text-decoration:none;
+    }
+    a:visited {
+    text-decoration:none;
+    }
+    a:hover {
+    text-decoration:underline;
+    }
+    img {
+        margin: auto;
+        display: block;
+        width: 95%;
+        margin: auto;
+    }
+    table {
+        -webkit-box-shadow: 0px 0px 21px 1px rgba(0,0,0,0.63); 
+        box-shadow: 0px 0px 21px 1px rgba(0,0,0,0.63);
+        border: solid 1px gray
+    }
+    table thead th {
+        background-color: black;
+        color: white;    
+    }
+    table tbody tr:nth-child(even) td {
+        background-color: #f1f1f1;
+    }
+    table tbody tr:hover td {
+        background-color: lightgray;
+        cursor: pointer;
+    }
+    </style>
+<body>
+    <div class="wrapper">
+        <div class="menu">
+            <ul>
+                <li><a href="pagina.html" target="_blank">Página Principal</a></li>
+                <li><a href="sobre.html" target="_blank">Sobre a Clínica</a></li>
+                <li><a href="horario.html" target="_blank">Horário de Atendimento</a></li>
+                <li><a href="contato.html" target="_blank">Contato</a></li>
+            </ul>
+        </div>
+
+        <div class="main">
+            <div class="header">
+                <img src="./src/horario.jpg" width="800" alt="icone de cabeçalho da clínica">
+            </div>
+    
+            <div id="principal" class="content">               
+                <p> Abaixo, você poderá acompanhar o valor dos nossos serviços mais buscados em nossa Clínica. Se por acaso, você não encontrar o que procura, entre em contato conosco que teremos prazer e lhe atender.</p>
+
+                <table summary="Tabela de informações de valores e horários" align="center" cellpadding="8" cellspacing="0" >
+                    <thead>
+                        <tr>
+                            <th>Serviço</th>
+                            <th>Segunda a Sexta</th>
+                            <th>Valor</th>      
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Limpeza </td>
+                            <td>08:00 às 17:00</td>
+                            <td>R$ 150,00</td>
+                        </tr>
+                        <tr>
+                            <td>Cárie</td>
+                            <td>08:00 às 17:00</td>
+                            <td>R$ 180,00</td>
+                        </tr>
+                        <tr>
+                            <td>Extração</td>
+                            <td>08:00 às 17:00</td>
+                            <td>R$ 250,00</td>
+                        </tr>
+                        <tr>
+                            <td>Clareamento</td>
+                            <td>08:00 às 12:00</td>
+                            <td>R$ 400,00</td>
+                        </tr>
+                    </tbody>
+                </table>            
+            </div>
+            <div class="footer">
+                <img src="./src/footer.jpg" alt="ícone de rodapé da página">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

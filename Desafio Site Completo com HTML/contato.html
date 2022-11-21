@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="base.css">
+</head>
+<style type="text/css">
+    a:link {
+    text-decoration:none;
+    }
+    a:visited {
+    text-decoration:none;
+    }
+    a:hover {
+    text-decoration:underline;
+    }
+    img {
+        margin: auto;
+        display: block;
+        width: 95%;
+        margin: auto;
+    }
+    form {
+        width: 400px;
+        padding: 1em;
+        border: 1px solid #CCC;
+        border-radius: 1em;
+}
+    label {
+	    display: block;
+	    float: left;
+}
+/*/Define um tamanho, impedindo que fiquem desalinhados*/
+    label, input {
+	    width:100px;
+	    margin: 3px 0;
+}
+/* AUMENTA A largura do INPUT*/
+    input {
+	width:250px;
+}
+    input, textarea {
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        border: 1px solid #999;
+    }
+    textarea {
+        vertical-align: top;
+        height: 80px;
+        width: 250px;
+    }
+    button {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    </style>
+<body>
+    <div class="wrapper">
+        <div class="menu">
+            <ul>
+                <li><a href="pagina.html" target="_blank">Página Principal</a></li>
+                <li><a href="sobre.html" target="_blank">Sobre a Clínica</a></li>
+                <li><a href="horario.html" target="_blank">Horário de Atendimento</a></li>
+                <li><a href="contato.html" target="_blank">Contato</a></li>
+            </ul>
+        </div>
+
+        <div class="main">
+            <div class="header">
+                <img src="./src/contato.jpg" width="800" alt="icone de cabeçalho da clínica">
+            </div>
+    
+            <div id="principal" class="content">               
+                <p>Aqui, você poderá acessar nossos principais contatos e enviar uma mensagem para nós. Responderemos o mais breve.</p>
+                <p>Telefone de Contato e Whats: (51) 3233-0032 e (51) 9 9900-0012</p>
+                <p>Estamos localizados na Rua da Travessia, nº. 12566, Centro, POA/RS</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4610.833273690367!2d-51.23347084672647!3d-30.030487861197958!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9519790e76119bcb%3A0xde3992664aeef26a!2sCentro%20Administrativo%20Municipal%20de%20Porto%20Alegre!5e0!3m2!1spt-BR!2sbr!4v1668896420107!5m2!1spt-BR!2sbr" width="430" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
+
+                <form name="contato" autocomplete="on" method="post" action="https:www.meusiteclinicasempresorrindo.com/contato" >
+                    <label>Nome:</label><input type="text" name="nome" /><br>
+                    <label>E-mail:</label><input type="text" name="e-mail" /><br>
+                    <label>Assunto:</label><input type="text" name="assunto" /><br>
+                    <label>Mensagem</label>
+                    <Textarea name="mensaggem"></Textarea></p>
+                    <button type="submit"> Enviar</button>
+                    <button type="reset"> Limpar Formulário</button>
+                </form>
+
+                              
+            </div>
+    
+            <div class="footer">
+                <img src="./src/footer.jpg" alt="ícone de rodapé da página">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
